@@ -1,5 +1,3 @@
-//console.log('Starting user.js...');
-
 const fs = require('fs');
 
 var fetchUsers = () => {
@@ -51,7 +49,7 @@ var getUserByNickname = (nickname) => {
     return filteredUsers[0];
 }
 var getAll = () => {
-    console.log('Getting all notes...');
+    return fetchUsers();
 }
 
 module.exports = {
